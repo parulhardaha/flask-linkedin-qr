@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your QR Code</title>
+</head>
+<body>
+    <h2>Here is your LinkedIn QR Code:</h2>
+    <img src="{{ qr_image }}" alt="QR Code" width="300">
+    <br><br>
+    <a href="{{ url_for('download_qr', filename=filename) }}">⬇️ Download QR Code</a>
+    <br><br>
+    <a href="/">← Generate Another</a>
+</body>
+</html>
